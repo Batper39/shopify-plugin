@@ -76,6 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (response.ok) {
       document.getElementById("successMsg").style.display = "block";
       form.reset();
+      const submittedReview = document.createElement("div");
+submittedReview.style.marginTop = "12px";
+submittedReview.innerHTML = `
+  <strong>Your Review:</strong><br>
+  Rating: ${rating} ⭐<br>
+  Comment: ${comment}
+`;
+form.parentNode.appendChild(submittedReview);
     } else {
       alert("Error submitting review.");
     }
