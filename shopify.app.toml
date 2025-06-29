@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "661d4ddb89499686a6900379063f5c83"
+name = "Revu"
+handle = "revu-3"
+application_url = "https://dome-activated-republicans-solar.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://dome-activated-republicans-solar.trycloudflare.com/auth/callback", "https://dome-activated-republicans-solar.trycloudflare.com/auth/shopify/callback", "https://dome-activated-republicans-solar.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false

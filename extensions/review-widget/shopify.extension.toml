@@ -1,0 +1,7 @@
+name = "review-widget"
+type = "theme"
+
+[extension]
+name = "Revu Review Block"
+type = "block"
+target = "product"

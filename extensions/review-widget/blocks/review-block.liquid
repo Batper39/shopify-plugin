@@ -1,0 +1,10 @@
+{% schema %}
+{
+  "name": "Revu Review Block",
+  "target": "section",
+  "settings": []
+}
+{% endschema %}
+
+<div id="revu-app-review-widget" data-product-id="{{ product.id }}"></div>
+{{ 'review-widget.js' | asset_url | script_tag }}
