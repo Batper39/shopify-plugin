@@ -67,14 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const rating = document.getElementById("rating").value;
     const comment = document.getElementById("comment").value;
 
-    const response = await fetch("http://localhost:57171/apps/submit-review", {
+    fetch("https://shopify-plugin-coral.vercel.app/apps/submit-review", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        productId,
-        rating,
-        comment
-      })
+      body: JSON.stringify({ productId, rating, comment })
     });
 
     if (response.ok) {
