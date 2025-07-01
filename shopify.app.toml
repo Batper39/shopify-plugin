@@ -3,7 +3,7 @@
 client_id = "661d4ddb89499686a6900379063f5c83"
 name = "Revu"
 handle = "revu-3"
-application_url = "https://added-creates-jon-baker.trycloudflare.com"
+application_url = "https://occasion-thirty-journals-darkness.trycloudflare.com"
 embedded = true
 
 [build]
@@ -26,7 +26,7 @@ api_version = "2025-04"
 scopes = "write_products"
 
 [auth]
-redirect_urls = ["https://added-creates-jon-baker.trycloudflare.com/auth/callback", "https://added-creates-jon-baker.trycloudflare.com/auth/shopify/callback", "https://added-creates-jon-baker.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://occasion-thirty-journals-darkness.trycloudflare.com/auth/callback", "https://occasion-thirty-journals-darkness.trycloudflare.com/auth/shopify/callback", "https://occasion-thirty-journals-darkness.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
