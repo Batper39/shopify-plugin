@@ -67,11 +67,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const rating = document.getElementById("rating").value;
     const comment = document.getElementById("comment").value;
 
-    const response = await fetch("https://shopify-plugin-coral.vercel.app/submit-review", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ productId, rating, comment })
-    });
+    const response = await fetch(
+      "https://shopify-plugin-coral.vercel.app/apps/submit-review",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId, rating, comment })
+      }
+    );
 
     if (response.ok) {
       document.getElementById("successMsg").style.display = "block";
